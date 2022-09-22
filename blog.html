@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title> my university website for demo </title>
+         <link rel="stylesheet" href="style.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,400&display=swap"
+          rel="stylesheet">
+          <script src="https://kit.fontawesome.com/98b9a89765.js" crossorigin="anonymous"></script>
+  <body>
+        <section class= "sub-header">
+            
+            <nav>
+                <a href="index.html"><img src="image/logo.png"></a>
+                <div class="nav-links"  id="navLinks">
+                    <i class= "fa-solid fa-xmark" onclick="hideMENU()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact-us.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class= "fa fa-bars"  onclick="showMENU()"></i>
+            </nav>
+            <h1>Our Certificate and Online Program</h1>
+        </section>
+        <!--------------certificate--------------->
+        <section class="certificate-program">
+            <div class="row">
+                <div class="certificate-col">
+                  <img src="image/certificate.jpg">
+                  <h2>WORLD CLASS UNIVERSITY </h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Totam nobis ipsum molestiae nostrum non? Itaque officia rem vero. 
+                      Rerum totam sapiente tempora aspernaturc possimus aperiam necessitatibus
+                      illo veritatis sunt nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Totam nobis ipsum molestiae nostrum non? Itaque officia rem vero.
+                      Rerum totam sapiente tempora aspernatur possimus aperiam necessitatibus
+                      illo veritatis sunt nesciunt.</p><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Totam nobis ipsum molestiae nostrum non? Itaque officia rem vero. 
+                        Rerum totam sapiente tempora aspernaturc possimus aperiam necessitatibus
+                        illo veritatis sunt nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Totam nobis ipsum molestiae nostrum non? Itaque officia rem vero.
+                        Rerum totam sapiente tempora aspernatur possimus aperiam necessitatibus
+                        illo veritatis sunt nesciunt.</p><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Totam nobis ipsum molestiae nostrum non? Itaque officia rem vero. 
+                          Rerum totam sapiente tempora aspernaturc possimus aperiam necessitatibus
+                          illo veritatis sunt nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Totam nobis ipsum molestiae nostrum non? Itaque officia rem vero.
+                          Rerum totam sapiente tempora aspernatur possimus aperiam necessitatibus
+                          illo veritatis sunt nesciunt.</p><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Totam nobis ipsum molestiae nostrum non? Itaque officia rem vero. 
+                            Rerum totam sapiente tempora aspernaturc possimus aperiam necessitatibus
+                            illo veritatis sunt nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Totam nobis ipsum molestiae nostrum non? Itaque officia rem vero.
+                            Rerum totam sapiente tempora aspernatur possimus aperiam necessitatibus
+                            illo veritatis sunt nesciunt.</p>
+                          
+                   </div>
+                  <div class="program-col">
+                    <h2>POST CATEGORY</h2>
+                    <div>
+                    <span>=>BUSSINESS ANALYSIS</span>
+                    <span>21</span>
+                   </div>
+                   <div>
+                    <span>=>DATA SCIENCE</span>
+                    <span>23</span>
+                   </div>
+                   <div>
+                    <span>=>MACHINE LEARNING</span>
+                    <span>14</span>
+                   </div>
+                   <div>
+                    <span>=>COMPUTER SCIENCE</span>
+                    <span>30</span>
+                   </div>
+                   <div>
+                    <span>=>AutoCAD</span>
+                    <span>17</span>
+                   </div>
+                   <div>
+                    <span>=>JOURNAL ANALYSIS</span>
+                    <span>24</span>
+                   </div>
+                   <div>
+                    <span>=>COMMERCE</span>
+                    <span>20</span>
+                   </div>
+                  </div>
+                </div> 
+                <div class="commentbox">
+                  <h2>leave a comment</h2>
+
+                  <form class="comment-form" action="form-hndler2.php " method="post"> 
+                  <input type="text" placeholder="enter name" required>
+                  <input type="email" placeholder="enter email id" required>
+                  <textarea rows="5" placeholder="your comment"required></textarea>
+                  <button type="submit" class="hero-btn red-btn">post comment</button>
+                  </form>
+                 </div>
+        
+             
+          </section>
+          
+        
+        <!--------------footer--------------->
+        <section class="footer">
+            <h4>ABOUT US</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fugiat porro et  quis rerum magni, laborum,
+                ullam <br> harum hic labore repudiandae saepe officiis laboriosam officia! Ipsa ea quisquam veniam repellendus?</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+       </div>
+       <p>demo website <i class="fa fa-heart-o"></i>N M</p>
+        </section>
+
+
+
+
+
+         <!----------javacript for toggle menu ---------------->
+         <script>
+            var navLinks =document.getElementById("navLinks");
+
+           function showMENU() {
+                navLinks.style.right="0";
+            }
+            function hideMENU() {
+                navLinks.style.right="-200px";
+            }
+        </script>
+
+   </body>
+</html>
